@@ -1,0 +1,27 @@
+/* 
+--Created by Edward Mansour-- Dec 4, 2022
+*/
+
+import 'package:flutter/material.dart';
+import 'package:speeches/features/quotes/presantation/pages/quote.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  //! This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Speeches',
+      theme: ThemeData(
+        primarySwatch: Colors.teal,
+      ),
+      home: const QuotePage(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
